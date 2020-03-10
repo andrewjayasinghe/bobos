@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<title>Hangman</title>
+<link rel='stylesheet' href='style.css'>
+</head>
+
+<body>
+    <h3 id="score"></h3>
+    <div id="unknown"></div>
+    <h2 id="lives"></h2>
+    <h2 id="hint"></h2>
+    <div id="letters"></div>
+    <h2 id="entername">Enter Name:</h2>
+    <input type="text" id="name">
+    <input type="button" id="go" value="GO">
+    <input type="button" onClick="history.go(0)" VALUE="Reset" id="refresh">
+
+    <h1 id="title">HANGMAN</h1>
+
+    <h4 id="desc">You have 7 chances to guess the correct word. 
+        <br>If you guess the correct letter, the button turns green and you gain +2 points for each letter.
+        <br>For each wrong letter gussed, you lose a life, the button turns red and you lose -1 point.
+        <br>If you guess the word with lives remaining, another random word will appear.
+        <br>Have Fun!</h4>
+        <button id="start">Start</button>
+        <button id="h2p">How To Play</button>
+
+        <script src="hangman.js"></script>
+        
+        <script>
+
+        game_start_screen()
+        
+        </script>
+
+</body>
+</html>
